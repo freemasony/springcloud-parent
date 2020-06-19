@@ -15,4 +15,7 @@ spring:
     config:
       server:
         git:
-          uri:
+          uri: https://github.com/freemasony/springcloud-parent
+          search-paths: springcloud-config-center/config
+          username: zhoujianth@163.com
+          password: zhoujianth9895

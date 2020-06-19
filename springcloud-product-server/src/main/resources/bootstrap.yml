@@ -1,0 +1,22 @@
+
+spring:
+  application:
+    name: springcloud-product-server
+  cloud:
+    config:
+      label: master
+      username: zhoujianth@163.com
+      password: zhoujianth9895
+      discovery:
+        enabled: true
+        service-id: springcloud-config-server
+      profile: prod
+  profiles:
+    active: prod
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9011/eureka/
+    register-with-eureka: true
+    fetch-registry: true
