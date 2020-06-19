@@ -1,5 +1,5 @@
 server:
-  port: 9020
+  port: 9014
 
 eureka:
   client:
@@ -10,5 +10,9 @@ eureka:
 
 spring:
   application:
-    name: springcloud-api-server
-
+    name: springcloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri:

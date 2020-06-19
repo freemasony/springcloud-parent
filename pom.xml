@@ -12,6 +12,8 @@
         <module>springcloud-eureka-registry</module>
         <module>springcloud-product-server</module>
         <module>springcloud-api-server</module>
+        <module>springcloud-user-server</module>
+        <module>springcloud-config-server</module>
     </modules>
 
     <properties>
