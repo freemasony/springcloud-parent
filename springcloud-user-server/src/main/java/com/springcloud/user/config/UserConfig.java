@@ -1,4 +1,4 @@
-package com.springcloud.product.config;
+package com.springcloud.user.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -11,16 +11,16 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @Data
-@ConfigurationProperties(prefix = "product")
+@ConfigurationProperties(prefix = "user")
 @RefreshScope
-public class ProudctConfig {
+public class UserConfig {
 
-    private Proudct config;
+    private user config;
 
-    public static class Proudct{
+    public static class user{
         private String name;
 
-        private Integer amount;
+        private Integer age;
 
         public String getName() {
             return name;
@@ -30,12 +30,12 @@ public class ProudctConfig {
             this.name = name;
         }
 
-        public Integer getAmount() {
-            return amount;
+        public Integer getAge() {
+            return age;
         }
 
-        public void setAmount(Integer amount) {
-            this.amount = amount;
+        public void setAge(Integer age) {
+            this.age = age;
         }
     }
 

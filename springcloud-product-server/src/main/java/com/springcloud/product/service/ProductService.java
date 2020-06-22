@@ -1,6 +1,6 @@
 package com.springcloud.product.service;
 
-import com.springcloud.product.config.ProudctConfig;
+import com.springcloud.product.config.ProductConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Component;
@@ -14,9 +14,9 @@ import org.springframework.stereotype.Component;
 public class ProductService {
 
     @Autowired
-    private ProudctConfig proudctConfig;
+    private ProductConfig productConfig;
 
     public String getProduct(){
-        return proudctConfig.getConfig().getName();
+        return productConfig.getConfig().getName();
     }
 }
