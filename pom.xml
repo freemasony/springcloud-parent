@@ -25,7 +25,7 @@
         <mysql.version>6.0.6</mysql.version>
         <lombok.version>1.16.20</lombok.version>
         <spring.boot.version>2.1.9.RELEASE</spring.boot.version>
-        <junit.version>4.11</junit.version>
+        <junit.version>4.13.1</junit.version>
     </properties>
 
     <dependencyManagement>
